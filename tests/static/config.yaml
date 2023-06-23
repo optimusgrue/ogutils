@@ -1,0 +1,25 @@
+
+core:
+  loglevel: debug
+  sleep: 5
+  soap_orders: NewOrder
+  soap_order_header_object: clsOrderHeader
+  soap_order_detail_object: clsOrderDetail
+  soap_auth: soap_auth
+  wsdl: https://www.example.com/webservice.asmx?WSDL
+
+sources:
+  db01:
+    host: db01.example.com
+    database: INTEGRATION
+    schema: api
+    uid: joe
+    pwd: ketchup
+
+  db02:
+    host: db02.example.com
+    table: CONTROL
+    schema: api
+    uid: joe
+    pwd: mustard
+    fetch_max: 50

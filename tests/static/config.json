@@ -1,0 +1,31 @@
+{
+    "core":
+        {
+            "loglevel": "debug",
+            "sleep": 5,
+            "soap_orders": "NewOrder",
+            "soap_order_header_object": "clsOrderHeader",
+            "soap_order_detail_object": "clsOrderDetail",
+            "soap_auth": "soap_auth",
+            "wsdl": "https://www.example.com/webservice.asmx?WSDL"
+        },
+    "sources":
+        {
+            "db01":
+                {
+                    "host": "db01.example.com",
+                    "database": "INTEGRATION",
+                    "schema": "api",
+                    "uid": "curly",
+                    "pwd": "howard"
+                },
+            "db02":
+                {
+                    "host": "db02.example.com",
+                    "database": "CONTROL",
+                    "schema": "api",
+                    "uid": "lou",
+                    "pwd": "costello"
+                }
+        }
+}
